@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
 import MainContainer from './MainContainer';
@@ -8,15 +7,24 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      username:'',
-      logged: false
+      logged: false,
+      username: ''
     }
   }
 
+  handleLogin = (username) => {
+    this.setState({
+      logged: true,
+      username: username
+    })
+  }
+
   render() {
+    console.log(this.state);
     return (
       <div className="App">
-        {this.state.logged ? <MainContainer /> : <Login  />}
+      
+        {this.state.logged ? <MainContainer /> : <Login handleLogin={this.handleLogin} />}
       
       </div>
     );
