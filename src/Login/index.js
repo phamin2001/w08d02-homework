@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import './index.css';
+import './style.css';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+
 class Login extends Component {
     constructor(){
         super();
@@ -24,8 +25,9 @@ class Login extends Component {
 
     render() {
         console.log(this.state);
+        // <img src='https://cdn.pixabay.com/photo/2017/04/05/01/10/museum-2203648_1280.jpg'/>
         return (
-            <Grid className='index-body' textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
+            <Grid  className='body' textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
             <Grid.Column style={{ maxWidth: 450 }}>
                 <Header as='h2' color='Brown' textAlign='center'>
                 Log In to your account
