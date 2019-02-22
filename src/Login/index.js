@@ -27,12 +27,15 @@ class Login extends Component {
         console.log(this.state);
         // <img src='https://cdn.pixabay.com/photo/2017/04/05/01/10/museum-2203648_1280.jpg'/>
         return (
+
             <Grid  className='body' textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
+            
             <Grid.Column style={{ maxWidth: 450 }}>
                 <Header as='h2' color='Brown' textAlign='center'>
                 Log In to your account
                 </Header>
                 <Form size='large' onSubmit={this.handleSubmit}>
+                <style>{'body { background-color: silver; }'}</style>
                     <Segment stacked>
                         <Form.Input fluid icon='user' iconPosition='left' name='username' placeholder='username' value={this.state.username} onChange={this.handleInput} />
                         <Form.Input
