@@ -25,7 +25,7 @@ class App extends Component {
       <div className="App">
       
         {this.state.logged ? <MainContainer /> : <Login handleLogin={this.handleLogin} />}
-      
+       
       </div>
     );
   }

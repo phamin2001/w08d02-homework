@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import './index.css';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 class Login extends Component {
     constructor(){
@@ -24,12 +25,7 @@ class Login extends Component {
     render() {
         console.log(this.state);
         return (
-            // <Form onSubmit={this.handleSubmit}>
-            //     <Form.Input type="text" name="username" value={this.state.username} onChange={this.handleInput} placeholder="username" />
-            //     <Form.Input type="password" name="password" value={this.state.password} onChange={this.handleInput} placeholder="password"/>
-            //     <Button color="Black" size="large" type="submit" value="submit">Login</Button>
-            // </Form>
-            <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
+            <Grid className='index-body' textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
             <Grid.Column style={{ maxWidth: 450 }}>
                 <Header as='h2' color='Brown' textAlign='center'>
                 Log In to your account
